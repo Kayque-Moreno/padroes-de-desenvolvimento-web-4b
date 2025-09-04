@@ -53,3 +53,25 @@ INSERT INTO Funcionario (nome, cpf) VALUES ('Gabriela Teixeira','678.901.234-56'
 INSERT INTO Funcionario (nome, cpf) VALUES ('Henrique Barros', '789.012.345-67');
 INSERT INTO Funcionario (nome, cpf) VALUES ('Isabela Rocha', '890.123.456-78');
 INSERT INTO Funcionario (nome, cpf) VALUES ('João Almeida', '901.234.567-89');
+
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T18:45:00', 199.90, 3.0, 1, 1);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T18:50:00', 89.50, 1.0, 2,2 );
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T18:55:00', 150.00, 2.0, 3, 3);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:00:00', 75.25, 1.5, 4, 4);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:05:00', 320.40, 4.0, 5, 5);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:10:00', 45.90, 0.5, 6, 6);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:15:00', 210.00, 3.5, 7, 7);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:20:00', 99.99, 2.0, 8, 8);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:25:00', 180.75, 2.5, 9, 9);
+INSERT INTO Venda (horario, valorTotal, quantidadeTotal, cliente_codigo, funcionario_codigo) VALUES ('2025-09-04T19:30:00', 60.00, 1.0, 10, 10);
+
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (59.90, 1.0, 1);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (120.50, 2.0, 2);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (35.75, 0.5, 3);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (89.99, 1.5, 4);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (150.00, 3.0, 5);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (45.25, 1.0, 6);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (99.90, 2.5, 7);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (18.00, 0.25, 8);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (75.00, 1.0, 9);
+INSERT INTO ItemVenda (valorParcial, quantidadeParcial, produto_codigo) VALUES (200.00, 4.0, 10);
