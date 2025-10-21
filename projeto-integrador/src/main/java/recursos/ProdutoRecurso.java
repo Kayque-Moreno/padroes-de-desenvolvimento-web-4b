@@ -1,7 +1,6 @@
 package recursos;
 
 import java.util.List;
-
 import entidades.Produto;
 import io.quarkus.panache.common.Sort;
 import jakarta.ws.rs.GET;
