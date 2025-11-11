@@ -1,7 +1,8 @@
 package recursos;
 
 import java.util.List;
-import entidades.Produto;
+
+import entidades.Enderecos;
 import io.quarkus.panache.common.Sort;
 import jakarta.transaction.Transactional;
 import jakarta.ws.rs.GET;
@@ -10,17 +11,17 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 
-@Path("produtos")
-public class ProdutoRecurso {
+@Path ("enderecos")
+public class EnderecosRecurso {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public  List<Produto> listar (){
-        return Produto.listAll(Sort.ascending("nome"));
+    public List<Enderecos> listar(){
+        return Enderecos.listAll(Sort.ascending("rua"));
     }
 
     @POST
-    @Transactional // add comportamento de autoconfirmar
-    public void salvar(Produto produto){
-        produto.persist(); // salva no BD
+    @Transactional
+    public void salvarEndereco (Enderecos enderecos){
+        enderecos.persist();
     }
 }
