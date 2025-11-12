@@ -31,6 +31,7 @@ insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabric
 insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Macarrão Parafuso Dona Benta 100g', 70, 11.89, '2025-12-25', 8,8);
 insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Café Pilão 500g', 50, 42.90, '2026-04-11', 9, 9);
 insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Farinha Coamo 1Kg', 80, 13.00, '2026-02-2', 10, 10);
+insert into Produto (nome, quantidade, preco, validade, categoria_codigo, fabricante_codigo) values ('Algodão', 30, 13.00, '2026-02-2', 10, 10);
 
 INSERT INTO Cliente (nome, cpf) VALUES ('Ana Souza', '123.456.789-09');
 INSERT INTO Cliente (nome, cpf) VALUES ('Bruno Lima', '987.654.321-00');
