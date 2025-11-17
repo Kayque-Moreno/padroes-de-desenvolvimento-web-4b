@@ -8,6 +8,7 @@ import jakarta.transaction.Transactional;
 import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -37,4 +38,24 @@ public class ClientesRecurso {
             clientes.delete();
         }
     }
+
+    @PUT
+    @Transactional
+    @Path("{id}")
+    public void editarCliientes (@PathParam("id") Integer id, Clientes clientes){
+        Clientes clienteExistente = Clientes.findById(id);
+        if (clienteExistente != null){
+            clienteExistente.nome = clientes.nome;
+            clienteExistente.cpf = clientes.cpf;
+            clienteExistente.endereco = clientes.endereco;
+            clienteExistente.telefone = clientes.telefone;
+            clienteExistente.email = clientes.email;
+            clienteExistente.dataCadastro = clientes.dataCadastro;
+            clienteExistente.ulimaAtualizacao = clientes.ulimaAtualizacao;
+            clienteExistente.atualizadoPor = clientes.atualizadoPor;
+
+            clienteExistente.persist();
+        }
+    }
+    
 }
